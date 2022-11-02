@@ -6,7 +6,7 @@ build
 click .\N-Queens\build.bat
 
 result:
-.\N-Queens\bin\Debug\net6.0\N-Queens.exe
+.\N-Queens\N-Queens\bin\Debug\net6.0\N-Queens.exe
 
 run 
 ------
