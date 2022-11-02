@@ -14,6 +14,7 @@
                 ShowPattens( pattens );
 
             Console.WriteLine( "==End==" );
+            Console.ReadLine();
         }             
 
         static List<List<int>> GetNextPattens ( int _targetPattenSize, List<int> _currentPatten )
