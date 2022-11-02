@@ -1,13 +1,16 @@
 # N-Queens
-with dotnet installed
+language : C#  
+platform: windows
 
-build
-------
+## Instructions
+
+with [dotnet](https://dotnet.microsoft.com/en-us/download) installed
+
+### build
 click .\N-Queens\build.bat
 
-result:
+result path:
 .\N-Queens\N-Queens\bin\Debug\net6.0\N-Queens.exe
 
-run 
-------
+### run 
 click .\N-Queens\run.bat
