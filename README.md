@@ -3,17 +3,11 @@ with dotnet installed
 
 build
 ------
-click build.bat
+click .\N-Queens\build.bat
 
 result:
-.\N-Queens\N-Queens\bin\Debug\net6.0\N-Queens.exe
+.\N-Queens\bin\Debug\net6.0\N-Queens.exe
 
 run 
 ------
-click run.bat
-
-
-test
-------
-
-
+click .\N-Queens\run.bat
