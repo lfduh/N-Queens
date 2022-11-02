@@ -7,7 +7,7 @@ platform: windows
 with [dotnet](https://dotnet.microsoft.com/en-us/download) installed
 
 ### build
-batch script in
+exec batch script:
 ```
 .\N-Queens\build.bat
 ```
@@ -18,7 +18,7 @@ result path:
 ```
 
 ### run 
-batch script in
+exec batch script:
 ```
 .\N-Queens\run.bat
 ```
