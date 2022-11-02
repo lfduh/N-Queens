@@ -4,7 +4,7 @@ platform: windows
 
 ## Instructions
 
-with [dotnet](https://dotnet.microsoft.com/en-us/download) installed
+with [.NET SDK](https://dotnet.microsoft.com/en-us/download) installed
 
 ### build
 exec batch script:
