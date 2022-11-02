@@ -20,19 +20,12 @@
         {
             var pattens = new List<List<int>>();
 
-            if( _currentPatten.Count == _targetPattenSize )
-            {
-                pattens.Add( _currentPatten );
-                return pattens;
-            }
-
             for( int _positionX = 0; _positionX < _targetPattenSize; _positionX++ )
             {                
                 if( HasNoCollisions( _positionX, _currentPatten ) )
                 {                  
-                    var nextPatten = new List<int>( _currentPatten );
-                    nextPatten.Add( _positionX );
-                    var nextPattens = GetNextPattens( _targetPattenSize, nextPatten );
+                    var nextPatten = _currentPatten.Append( _positionX ).ToList();
+                    var nextPattens = (nextPatten.Count == _targetPattenSize) ? new List<List<int>>().Append( nextPatten ) : GetNextPattens( _targetPattenSize, nextPatten );
                     pattens.AddRange( nextPattens );
                 }
             }
@@ -66,6 +59,7 @@
 
                 Console.WriteLine();
             }
+
             Console.WriteLine();
 
             _pattens.Remove( patten );
