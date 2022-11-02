@@ -1,16 +1,16 @@
 # N-Queens
-with dotnet in .\N-Queens\N-Queens
+with dotnet installed
 
 build
 ------
-dotnet build
+click build.bat
 
 result:
 .\N-Queens\N-Queens\bin\Debug\net6.0\N-Queens.exe
 
 run 
 ------
-dotnet run
+click run.bat
 
 
 test
