@@ -23,7 +23,7 @@
 
             for( int _positionX = 0; _positionX < _targetPattenSize; _positionX++ )
             {                
-                if( HasNoCollisions( _positionX, _currentPatten ) )
+                if( IsPositionVaild( _positionX, _currentPatten ) )
                 {                  
                     var nextPatten = _currentPatten.Append( _positionX ).ToList();
                     var nextPattens = (nextPatten.Count == _targetPattenSize) ? new List<List<int>>().Append( nextPatten ) : GetNextPattens( _targetPattenSize, nextPatten );
@@ -34,7 +34,7 @@
             return pattens;
         }
 
-        static bool HasNoCollisions ( int _positionX, List<int> _currentPatten )
+        static bool IsPositionVaild ( int _positionX, List<int> _currentPatten )
         {
             for( int i = 0; i < _currentPatten.Count; i++ )
             {
